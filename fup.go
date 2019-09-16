@@ -12,8 +12,7 @@ func Fup (err error) (string) {
 	return fullUnwrapParse (err)
 }
 
-	// fullUnwrapParse () assists Fup (), it was not designed to stand alone. That is
-	// the reason it was indented.
+	// fullUnwrapParse () assists Fup (), that is the reason it was indented.
 	func fullUnwrapParse (err error) (string) {
 		secondary := errors.Unwrap (err)
 		if secondary == nil {
